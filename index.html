@@ -23,7 +23,7 @@
     <section id="sobre">
         <h2>Sobre mim</h2>
         <img src="https://scontent.fbnu9-1.fna.fbcdn.net/v/t39.30808-1/250866689_2707574992878900_507721367839407084_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=AzubwwUhj8sQ7kNvwEuGgs0&_nc_oc=Ado1XVg1FT3a9UFwje5ZDbjAGO2GUTuoYLzPzdEdVEP4JM6w56QcteJXmVYC4DdBAV6wblL6U-rtpPIsjNUENTYS&_nc_zt=24&_nc_ht=scontent.fbnu9-1.fna&_nc_gid=KM4Pb845O6oKB9uvJb0m9w&_nc_ss=7a3a8&oh=00_Af2b4JRnBo0R4t7yVI5q1xGMQHIjGvRvxGrOxSqCXca6KQ&oe=69EC1C91"
-            alt="Foto minha" title="Imagem de perfil de joão">
+            alt="Foto minha" title="Imagem de perfil de João">
 
         <article>
             <p>Olá, eu sou João, desenvolvedor web apaixonado por criar sites modernos, funcionais e com boa experiência
@@ -47,22 +47,46 @@
         </article>
     </section>
     <footer>
-        <p>&copy; 2026 João. Todos os direitos reservados.</p>
         <section id="contato">
             <h2>Contato</h2>
             <p>Tem um projeto em mente? Entre em contato.</p>
-            <address>
-                E-mail:
-                <a href="mailto:joaovitordebairroslopes@gmail.com">
-                    joaovitordebairroslopes@gmail.com
-                </a>
+            <form action="">
+
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone" required><br>
+
+                <!--  -->
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <!--  -->
+
                 <br>
-                Telefone:
-                <a href="tel:+5547992793154">
-                    (47) 99279-3154
-                </a>
-            </address>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea>
+
+                <br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+
+                <br>
+
+                <input type="submit" value="Enviar mensagem">
+            </form>
         </section>
+
+        <p>&copy; 2026 João. Todos os direitos reservados.</p>
     </footer>
 </body>
 
